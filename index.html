@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Class Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Virtual Class Timetable</h1>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <label>
+            Day:
+            <select id="day-select">
+                <option value="All">All</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+            </select>
+        </label>
+
+        <label>
+            Subject:
+            <select id="subject-select">
+                <option value="All">All</option>
+                <option>Math</option>
+                <option>English</option>
+                <option>Biology</option>
+                <option>Chemistry</option>
+                <option>Physics</option>
+            </select>
+        </label>
+    </section>
+
+    <!-- Timetable Grid -->
+    <section class="timetable-container">
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Subject</th>
+                    <th>Time</th>
+                    <th>Teacher</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Rows will be injected dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
